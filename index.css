@@ -105,7 +105,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  max-height: 5em;
+  max-height: 4em;
 }
 
 .card__footer dt {
