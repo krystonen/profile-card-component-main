@@ -73,7 +73,8 @@ body {
   height: 80%;
 }
 
-.card__title h3 {
+.card__title h1 {
+  font-size: 22px;
   height: 13px;
 }
 
