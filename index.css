@@ -1,0 +1,137 @@
+:root {
+  --primary-bg-color: hsl(185, 75%, 39%);
+  --primary-text-color: hsl(229, 23%, 23%);
+  --secondary-text-color: hsl(0, 0%, 59%);
+  --dark-blue-color: hsl(227, 10%, 46%);
+  --light-grey-color: #d6d6d6;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  background-size: 50%, 50%;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.card {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 8px var(--primary-bg-color);
+  background-color: white;
+}
+
+.card__avatar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -35%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card__top {
+  background: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.card__title h3 {
+  height: 13px;
+}
+
+.card__subtitle {
+  text-align: center;
+  font-size: 16px;
+}
+
+.card__age,
+.card__subtitle {
+  color: var(--secondary-text-color);
+}
+
+.card__footer {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid var(--light-grey-color);
+}
+
+.card__footer dl {
+  width: calc(100% - 20px);
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-height: 5em;
+}
+
+.card__footer dt {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--primary-text-color);
+}
+
+.card__footer dd {
+  margin: 0;
+  text-align: center;
+  min-height: 2em;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--secondary-text-color);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  margin: 0 auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
